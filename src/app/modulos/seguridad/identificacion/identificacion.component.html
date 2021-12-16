@@ -1,0 +1,20 @@
+
+    <form [formsGroup]="fgValidador">
+        <h4>Inicio de sesión</h4>
+        <div class="row">
+            <div class="input-field col s12">
+                <label for="usuario">Correo electrónico:</label>
+                <input formControlName="usuario" type="email" name="usuario" id="usuario" class="validate">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <label for="clave">Contraseña</label>
+                <input formControlName="clave" type="password" id="clave" name="clave" class="validate">
+            </div>
+        </div>
+        <div class="row center-aling">
+            <button [disabled]="!fgValidador.valid" type="submit">Ingresar</button>
+        </div>
+    </form>
+
