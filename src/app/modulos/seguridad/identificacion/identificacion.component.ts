@@ -7,16 +7,16 @@ import { FormBuilder, FormGroup, Validators,FormControl } from '@angular/forms';
   styleUrls: ['./identificacion.component.css']
 })
 export class IdentificacionComponent implements OnInit {
-  
-  //fgValidador: FormGroup;
+ 
+  fgValidador: FormGroup = new FormGroup({});
 
   constructor(private fb: FormBuilder) { }
   
   ngOnInit(): void {
-    //this.fgValidador = this.fb.group({
-    //usuario: ['', [Validators.required, Validators.email]],
-   // clave: ['', [Validators.required]]
-  //});
+    this.fgValidador = this.fb.group({
+    usuario: ['', [Validators.required, Validators.email]],
+    clave: ['', [Validators.required]]
+  });
   }
 
 }
