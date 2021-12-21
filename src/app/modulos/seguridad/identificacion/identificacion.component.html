@@ -1,20 +1,24 @@
-
-    <form [formGroup]="fgValidador">
+<div class="container">
+    <form [formGroup]="fgValidador" (ngSubmit)="IdentificarUsuario()">
         <h4>Inicio de sesión</h4>
         <div class="row">
             <div class="input-field col s12">
-                <label for="usuario">Correo electrónico:</label>
+                <i class="material-icons right">email</i>
                 <input formControlName="usuario" type="email" name="usuario" id="usuario" class="validate">
+                <label for="usuario">Correo electrónico:</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <label for="clave">Contraseña</label>
+                <i class="material-icons right">vpn_key</i>
                 <input formControlName="clave" type="password" id="clave" name="clave" class="validate">
+                <label for="clave">Contraseña:</label>
             </div>
         </div>
         <div class="row center-aling">
-            <button [disabled]="!fgValidador.valid" type="submit">Ingresar</button>
+            <button [disabled]="!fgValidador.valid" class="btn waves-effect waves-light" type="submit">Ingresar
+                <i class="material-icons right">send</i>
+            </button>
         </div>
     </form>
-
+</div>
