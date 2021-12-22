@@ -4,7 +4,7 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li *ngIf="sessionStarted" ><a routerLink="/administracion/personas">Personas</a></li>
-            <li *ngIf="sessionStarted"><a routerLink="/administracion/productos">Productos</a></li>
+            <li *ngIf="sessionStarted"><a routerLink="/administracion/listar-productos">Productos</a></li>
             <li *ngIf="sessionStarted"><a routerLink="/seguridad/cambioClave">Cambiar contraseña</a></li>
             <li *ngIf="!sessionStarted"><a routerLink="/seguridad/identificar">Iniciar sesión</a></li>
             <li *ngIf="sessionStarted"><a routerLink="/seguridad/cerrarSesion">Cerrar sesión</a></li>
@@ -14,7 +14,7 @@
 
 <ul class="sidenav" id="mobile-demo">
     <li *ngIf="sessionStarted"><a routerLink="/administracion/personas">Personas</a></li>
-    <li *ngIf="sessionStarted"><a routerLink="/administracion/productos">Productos</a></li>
+    <li *ngIf="sessionStarted"><a routerLink="/administracion/listar-productos">Productos</a></li>
     <li *ngIf="sessionStarted"><a routerLink="/seguridad/cambioClave">Cambiar contraseña</a></li>
     <li *ngIf="!sessionStarted"><a routerLink="/seguridad/identificar">Iniciar sesión</a></li>
     <li *ngIf="sessionStarted"><a routerLink="/seguridad/cerrarSesion">Cerrar sesión</a></li>

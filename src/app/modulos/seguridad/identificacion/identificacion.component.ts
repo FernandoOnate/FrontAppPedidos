@@ -13,8 +13,11 @@ export class IdentificacionComponent implements OnInit {
 
   fgValidador: FormGroup = new FormGroup({});
 
-  constructor(private fb: FormBuilder,
-  private servicioSeguridad:SeguridadService,private router:Router) { }
+  constructor(
+    private fb: FormBuilder,
+    private servicioSeguridad: SeguridadService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.fgValidador = this.fb.group({
